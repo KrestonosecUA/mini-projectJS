@@ -1,0 +1,135 @@
+/* Стилизація проєкта -
+index.html - всі блоки з user - по 2 в рядок. кнопки/аосилвння розташувати під інформацією про user.
+user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.
+блоки з короткою іфною про post - в ряд по 5 .
+post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.
+Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд) */
+
+body {
+    background-color: #f5dae6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-title {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #520c0c;
+}
+.line:before, .line:after {
+    display: block;
+    content: '';
+    background-color: #420606;
+    height: 5px;
+}
+.user-blocks, .details-block, .post-blocks {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    border: 4px solid #d5d5da;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.user-block, .post-block, .comment-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #420606;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 35%;
+}
+.user-block:hover {
+    box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+}
+.user-info {
+    color: #520c0c;
+    font-size: 26px;
+}
+.user-button, .post-button, .post-detail-button {
+    width: 50%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1px rgba(82, 12, 12, 0) solid;;
+    border-radius: 10px;
+    background: #efa2e6;
+    box-shadow: 0 3px 35px 0 rgba(95, 98, 102, 0.17);
+    cursor: pointer;
+    font-size: 16px;
+    color: #520c0c;
+}
+.user-button:hover, .post-button:hover, .post-detail-button:hover {
+    border: 1px #520c0c solid;
+}
+.details-block, .post-blocks  {
+    width: 90%;
+    margin-bottom: 20px;
+}
+.user-list {
+    font-size: 22px;
+    border: 4px solid #420606;
+    border-radius: 10px;
+    padding: 20px 80px 20px 80px;
+}
+.post-button {
+    width: 90%;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.post-blocks {
+    margin-top: 20px;
+}
+.post-block {
+    width: 16%;
+}
+.post-title {
+    font-size: 16px;
+    color: #520c0c;
+    height: 70px;
+}
+.post-detail-button {
+    width: 80%;
+}
+.post-info, .comment-blocks {
+    width: 80%;
+    border: 4px solid #520c0c;
+    border-radius: 10px;
+    padding: 20px;
+}
+.post-text {
+    font-size: 26px;
+}
+.title-comments {
+    font-size: 26px;
+    color: #520c0c;
+}
+.comment-blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.comment-block {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comment-title {
+    font-size: 24px;
+    text-align: center;
+}
+.comment-email {
+    font-size: 18px;
+    color: #9a9a9a;
+    text-align: center;
+}
+.comment-body {
+    font-size: 20px;
+}
+
